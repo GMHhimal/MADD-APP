@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Bottom bar — "home" tab active.
+    Hand-built rather than using a stock tab widget so the pill indicator,
+    label weight and spacing match ui/components/BottomBar.kt exactly.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_surface"
+    android:elevation="12dp">
+
+    <View style="@style/Lumina.Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/navHome"
+        style="@style/Lumina.NavItem"
+        android:contentDescription="Home">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="28dp"
+            android:background="@drawable/nav_pill_active">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home"
+                android:tint="@color/brand_primary_deep"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Lumina.NavLabel.Active"
+            android:text="Home" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navPlan"
+        style="@style/Lumina.NavItem"
+        android:contentDescription="Plan">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="28dp"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_plan"
+                android:tint="@color/text_tertiary"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Lumina.NavLabel"
+            android:text="Plan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navWellness"
+        style="@style/Lumina.NavItem"
+        android:contentDescription="Wellness">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="28dp"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_wellness"
+                android:tint="@color/text_tertiary"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Lumina.NavLabel"
+            android:text="Wellness" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navProgress"
+        style="@style/Lumina.NavItem"
+        android:contentDescription="Progress">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="28dp"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_progress"
+                android:tint="@color/text_tertiary"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Lumina.NavLabel"
+            android:text="Progress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navProfile"
+        style="@style/Lumina.NavItem"
+        android:contentDescription="Profile">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="28dp"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile"
+                android:tint="@color/text_tertiary"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Lumina.NavLabel"
+            android:text="Profile" />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

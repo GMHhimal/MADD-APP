@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_surface"
+    android:padding="24dp">
+
+    <TextView
+        style="@style/Lumina.Text.TitleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick a time" />
+
+    <TimePicker
+        android:id="@+id/timePickerDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/btnTimeDone"
+        style="@style/Lumina.Button.Primary"
+        android:layout_height="@dimen/button_height_compact"
+        android:layout_marginTop="16dp"
+        android:text="Done" />
+</LinearLayout>

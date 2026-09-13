@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile — port of feature/profile/ProfileScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <TextView
+                style="@style/Lumina.Text.H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile" />
+
+            <!-- Identity card -->
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/card_surface_lg"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/avatar_gradient"
+                    android:gravity="center"
+                    android:text="L"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_on_brand" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtProfileName"
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lumina User" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Student • Stay organized and balanced" />
+
+                    <TextView
+                        style="@style/Lumina.Pill"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pill_mint"
+                        android:textColor="@color/brand_mint_deep"
+                        android:drawableStart="@drawable/ic_flame"
+                        android:drawableTint="@color/brand_mint_deep"
+                        android:text="12 day streak" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Preferences -->
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Preferences" />
+
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="14dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <Switch
+                    android:id="@+id/switchProfileSmart"
+                    style="@style/Lumina.Switch"
+                    android:checked="true"
+                    android:text="Smart suggestions" />
+
+                <View style="@style/Lumina.Divider" />
+
+                <Switch
+                    android:id="@+id/switchProfileNotifications"
+                    style="@style/Lumina.Switch"
+                    android:checked="true"
+                    android:text="Notifications" />
+            </LinearLayout>
+
+            <!-- Actions -->
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Manage" />
+
+            <LinearLayout
+                android:id="@+id/btnProfileHealth"
+                style="@style/Lumina.Card"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:baselineAligned="false">
+
+                <ImageView
+                    style="@style/Lumina.IconChip"
+                    android:src="@drawable/ic_heart_pulse"
+                    android:background="@drawable/icon_chip_danger"
+                    android:tint="@color/status_danger"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    style="@style/Lumina.Text.CardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:text="Health reminders" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/text_tertiary"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnResetHabits"
+                style="@style/Lumina.Card"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:baselineAligned="false">
+
+                <ImageView
+                    style="@style/Lumina.IconChip"
+                    android:src="@drawable/ic_repeat"
+                    android:background="@drawable/icon_chip_mint"
+                    android:tint="@color/brand_mint_deep"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    style="@style/Lumina.Text.CardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:text="Reset today's habits" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/text_tertiary"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnRestartSetup"
+                style="@style/Lumina.Card"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:baselineAligned="false">
+
+                <ImageView
+                    style="@style/Lumina.IconChip"
+                    android:src="@drawable/ic_gear"
+                    android:background="@drawable/icon_chip_sunken"
+                    android:tint="@color/text_secondary"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    style="@style/Lumina.Text.CardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:text="Restart setup" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/text_tertiary"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <!-- Non-diagnostic note -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/card_sunken"
+                android:padding="14dp"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/text_tertiary"
+                    android:importantForAccessibility="no" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="11dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:text="Lumina is not a medical app" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Reminders and wellness tips are general guidance only, never a diagnosis." />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav_profile" />
+</LinearLayout>

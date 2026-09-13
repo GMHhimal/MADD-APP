@@ -1,0 +1,12 @@
+Lumina Hybrid Beautiful + XML
+=============================
+
+- Restored the polished Compose Lumina UI as the normal launcher.
+- Kept Room 2.7.1 compatibility fix.
+- Kept Compose preview support.
+- Added classic Android XML layouts under res/layout.
+- Added traditional XmlMainActivity using setContentView/findViewById.
+- XmlMainActivity shares the existing Room database/repository.
+- Added polished XML styles/drawables matching Lumina blue/mint/peach/lavender design tokens.
+- Reworked activity_welcome.xml, activity_home.xml, activity_breathing.xml and activity_focus.xml to closely mirror the Compose visual language.
+- MainActivity remains the launcher so the real app still looks like the original polished version.

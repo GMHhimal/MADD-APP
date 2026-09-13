@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Focus mode — port of feature/focus/FocusModeScreen.kt. Immersive night surface. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_night_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_chevron_left"
+                    android:background="@drawable/btn_night"
+                    android:tint="@color/text_on_brand"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Back" />
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/btn_night_shape"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/text_on_brand"
+                    android:drawableStart="@drawable/ic_bell"
+                    android:drawableTint="@color/night_text_soft"
+                    android:drawablePadding="7dp"
+                    android:text="Notifications paused" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/night_text_soft"
+                android:text="Focus mode" />
+
+            <TextView
+                style="@style/Lumina.Text.H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:textColor="@color/text_on_brand"
+                android:text="Cloud Computing revision" />
+
+            <!-- Timer dial. The id stays a TextView so the countdown in
+                 XmlMainActivity.startSimpleCountdown() keeps working. -->
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/dial_breathing">
+
+                <TextView
+                    android:id="@+id/txtFocusTimer"
+                    style="@style/Lumina.Text.Numeric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="46sp"
+                    android:textColor="@color/text_on_brand"
+                    android:text="25:00" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:textColor="@color/night_text_soft"
+                android:text="Stay with one task. Everything else can wait until the timer ends." />
+
+            <!-- Session stats -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/btn_night_shape"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_on_brand"
+                        android:text="2" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/night_text_soft"
+                        android:text="Sessions today" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/btn_night_shape"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_on_brand"
+                        android:text="50m" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/night_text_soft"
+                        android:text="Focused time" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnFocusStart"
+                style="@style/Lumina.Button.Primary"
+                android:layout_marginTop="26dp"
+                android:text="Start Focus" />
+
+            <Button
+                android:id="@+id/btnFocusDone"
+                style="@style/Lumina.Button.Night"
+                android:layout_marginTop="12dp"
+                android:text="Finish Session" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

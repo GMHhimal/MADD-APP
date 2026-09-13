@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Progress — port of feature/progress/ProgressScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Lumina.Text.H1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress" />
+
+                    <TextView
+                        android:id="@+id/txtProgressSummary"
+                        style="@style/Lumina.Text.LabelMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Loading progress…" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/Lumina.IconChip"
+                    android:src="@drawable/ic_progress"
+                    android:background="@drawable/icon_chip_white"
+                    android:tint="@color/brand_primary_deep"
+                    android:elevation="4dp"
+                    android:contentDescription="Progress" />
+            </LinearLayout>
+
+            <!-- Segmented range control -->
+            <RadioGroup
+                android:id="@+id/groupProgressRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/card_sunken"
+                android:padding="4dp">
+
+                <RadioButton
+                    style="@style/Lumina.Segment"
+                    android:checked="true"
+                    android:textColor="@color/text_primary"
+                    android:text="Week" />
+
+                <RadioButton
+                    style="@style/Lumina.Segment"
+                    android:layout_marginStart="4dp"
+                    android:text="Month" />
+
+                <RadioButton
+                    style="@style/Lumina.Segment"
+                    android:layout_marginStart="4dp"
+                    android:text="3 Months" />
+            </RadioGroup>
+
+            <!-- Habit consistency ring -->
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/card_surface_lg"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/dial_focus">
+
+                    <TextView
+                        style="@style/Lumina.Text.H2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/status_success"
+                        android:text="82%" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Lumina.Text.Overline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Habit consistency" />
+
+                    <TextView
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Steady week" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Up 6 points from last week." />
+
+                    <ProgressBar
+                        style="@style/Lumina.Meter"
+                        android:layout_marginTop="12dp"
+                        android:progressDrawable="@drawable/meter_success"
+                        android:progress="82" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Stat tiles -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_target"
+                        android:background="@drawable/pill_primary"
+                        android:tint="@color/brand_primary_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Overline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Focus minutes" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Numeric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="28sp"
+                        android:textColor="@color/brand_primary_deep"
+                        android:text="125" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 sessions logged" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_smile"
+                        android:background="@drawable/pill_lavender"
+                        android:tint="@color/brand_lavender_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Overline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Good mood days" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Numeric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="28sp"
+                        android:textColor="@color/brand_lavender_deep"
+                        android:text="5" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="out of 7 this week" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Weekly bars -->
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="This week" />
+
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="M" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="T" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="96dp"
+                        android:background="@drawable/icon_chip_solid_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/brand_primary_deep"
+                        android:text="W" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="T" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="84dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="F" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="S" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/pill_primary" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="S" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Insight -->
+            <LinearLayout
+                style="@style/Lumina.Card.Insight"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_bulb"
+                        android:tint="@color/brand_lavender_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/brand_primary_deep"
+                        android:text="What Lumina noticed" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Lumina.Text.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Your mood is generally better on days when you complete exercise and at least one focus session." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav_progress" />
+</LinearLayout>

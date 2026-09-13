@@ -1,0 +1,3 @@
+# XML / Compose match note
+
+The main launcher remains the original Jetpack Compose `MainActivity`. The XML layouts under `res/layout` are now visual replicas of the same Lumina screens for traditional Android Views / viva demonstration. They intentionally use the same screen names, labels, action IDs, colors, cards and hierarchy. Compose-only animation/effects (such as animated breathing scale and Aurora blobs) cannot be represented pixel-for-pixel in static XML previews, but the visible screen structure is matched closely. `XmlMainActivity` can load the XML screens and still uses the same Room repository for the supported demo actions.

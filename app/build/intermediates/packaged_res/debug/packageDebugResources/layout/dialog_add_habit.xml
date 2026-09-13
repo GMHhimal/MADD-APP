@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add habit sheet. The window itself is transparent (Theme.Lumina.Dialog),
+     so this rounded surface is the visible card. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_surface"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            style="@style/Lumina.IconChip"
+            android:src="@drawable/ic_sprout"
+            android:background="@drawable/icon_chip_mint"
+            android:tint="@color/brand_mint_deep"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHabitDialogTitle"
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New habit" />
+
+            <TextView
+                style="@style/Lumina.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Small and repeatable beats ambitious." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Habit" />
+
+    <EditText
+        android:id="@+id/etHabitTitle"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="Drink water"
+        android:inputType="textCapSentences"
+        android:importantForAutofill="no" />
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detail" />
+
+    <EditText
+        android:id="@+id/etHabitDetail"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="8 glasses through the day"
+        android:inputType="textCapSentences"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnHabitCancel"
+            style="@style/Lumina.Button.Neutral"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Cancel" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnHabitSave"
+            style="@style/Lumina.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

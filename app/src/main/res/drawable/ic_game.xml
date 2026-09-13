@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ported 1:1 from LuminaIcons.kt — 24x24 grid, round caps and joins. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M8.6 7.6h6.8a5 5 0 0 1 0 10H8.6a5 5 0 0 1 0-10z"
+        android:strokeColor="#FF16202E"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M7.4 10.8v3.4M5.7 12.5h3.4M15.6 13.4h.02M17.4 11.2h.02"
+        android:strokeColor="#FF16202E"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

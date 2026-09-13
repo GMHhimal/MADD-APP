@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Welcome — port of feature/welcome/WelcomeScreen.kt.
+    The soft colour wash is four radial-gradient "blobs" rather than a real
+    Gaussian blur: visually equivalent, and it costs nothing.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome_gradient">
+
+    <!-- Aurora backdrop -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="-90dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blob_lavender" />
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/blob_peach" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="-80dp"
+        android:background="@drawable/blob_mint" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="-90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blob_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="36dp"
+            android:paddingBottom="28dp">
+
+            <!-- Concentric rings: the same mark as the app icon and the breathing dial. -->
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:clipChildren="false">
+
+                <View
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ring_outline_soft" />
+
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ring_outline_mid" />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ring_outline_strong" />
+
+                <View
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/brand_mark_gradient"
+                    android:elevation="18dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/brand_tile_gradient"
+                android:elevation="14dp">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_target"
+                    android:tint="@color/text_on_brand"
+                    android:importantForAccessibility="no" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lumina" />
+
+            <TextView
+                style="@style/Lumina.Text.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:textColor="@color/brand_primary_deep"
+                android:text="Plan your life.\nProtect your time.\nFeel better." />
+
+            <TextView
+                style="@style/Lumina.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Your personal wellness and lifestyle assistant." />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="32dp" />
+
+            <Button
+                android:id="@+id/btnGetStarted"
+                style="@style/Lumina.Button.Primary"
+                android:text="Get Started" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                style="@style/Lumina.Button.Secondary"
+                android:layout_marginTop="12dp"
+                android:text="Sign In" />
+
+            <TextView
+                style="@style/Lumina.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_tertiary"
+                android:text="By continuing you agree to Lumina\'s Terms and Privacy Policy." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

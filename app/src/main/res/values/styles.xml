@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================================================================
+         Typography — a direct port of LuminaTypography in ui/theme/Type.kt.
+         Weights map to the platform sans family: SemiBold/Medium both land on
+         sans-serif-medium, Bold on textStyle=bold. Letter spacing is converted
+         from sp to em (tracking / fontSize).
+         =================================================================== -->
+
+    <style name="Lumina.Text" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Lumina/Display/Large — 30sp Bold -->
+    <style name="Lumina.Text.Display">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.013</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Lumina/Heading/H1 — 24sp Bold -->
+    <style name="Lumina.Text.H1">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.0125</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <!-- Lumina/Heading/H2 — 20sp SemiBold -->
+    <style name="Lumina.Text.H2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <!-- Lumina/Title/Large — 18sp SemiBold. The standard section header. -->
+    <style name="Lumina.Text.TitleLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.006</item>
+    </style>
+
+    <!-- Lumina/Title/Medium — 16sp SemiBold -->
+    <style name="Lumina.Text.TitleMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Lumina.Text.CardTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Lumina/Body/Large — 16sp Regular -->
+    <style name="Lumina.Text.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <!-- Lumina/Body/Medium — 14sp Regular -->
+    <style name="Lumina.Text.Body">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <!-- Lumina/Label/Large — 14sp Medium -->
+    <style name="Lumina.Text.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Lumina/Label/Medium — 13sp Medium -->
+    <style name="Lumina.Text.LabelMedium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Lumina/Caption — 12sp Medium -->
+    <style name="Lumina.Text.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.008</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <!-- Tracked-out tile label, e.g. "MOOD" / "FOCUS TIME". -->
+    <style name="Lumina.Text.Overline">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_tertiary</item>
+        <item name="android:letterSpacing">0.064</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Large numerals: breathing countdown, focus timer. -->
+    <style name="Lumina.Text.Numeric">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+
+    <style name="Lumina.Text.StatValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.006</item>
+    </style>
+
+    <!-- ===================================================================
+         Buttons — 56dp tall, 18dp radius, no all-caps, flat state animator so
+         the shape drawable (not the platform elevation curve) owns the look.
+         =================================================================== -->
+
+    <style name="Lumina.Button" parent="android:Widget.Material.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">9dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Lumina.Button.Primary">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+    <style name="Lumina.Button.Secondary">
+        <item name="android:background">@drawable/btn_secondary</item>
+        <item name="android:textColor">@color/brand_primary_deep</item>
+    </style>
+
+    <style name="Lumina.Button.Soft">
+        <item name="android:background">@drawable/btn_soft</item>
+        <item name="android:textColor">@color/brand_primary_deep</item>
+    </style>
+
+    <style name="Lumina.Button.Neutral">
+        <item name="android:background">@drawable/btn_neutral</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Lumina.Button.Night">
+        <item name="android:background">@drawable/btn_night</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+    </style>
+
+    <!-- Compact inline action, e.g. "Focus" / "Start" on the free-time cards. -->
+    <style name="Lumina.Button.Compact">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/min_touch_target</item>
+        <item name="android:minWidth">74dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:background">@drawable/btn_compact</item>
+        <item name="android:textColor">@color/brand_primary_deep</item>
+    </style>
+
+    <style name="Lumina.Button.CompactNeutral" parent="Lumina.Button.Compact">
+        <item name="android:background">@drawable/btn_compact_neutral</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Extended FAB with the brand-tinted shadow from the design. -->
+    <style name="Lumina.Button.Fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/btn_fab</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:paddingStart">22dp</item>
+        <item name="android:paddingEnd">26dp</item>
+        <item name="android:elevation">12dp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- ===================================================================
+         Surfaces
+         =================================================================== -->
+
+    <style name="Lumina.Card" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/card_surface</item>
+        <item name="android:padding">@dimen/card_padding</item>
+        <item name="android:elevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="Lumina.Card.Flat">
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Lumina.Card.Insight">
+        <item name="android:background">@drawable/card_insight</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+    <style name="Lumina.IconChip" parent="">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/icon_chip_primary</item>
+        <item name="android:tint">@color/brand_primary</item>
+    </style>
+
+    <style name="Lumina.IconChip.Small">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:background">@drawable/icon_chip_small_primary</item>
+    </style>
+
+    <!-- Small rounded label, e.g. "12 days", "HIGH". -->
+    <style name="Lumina.Pill" parent="Lumina.Text.LabelMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">11dp</item>
+        <item name="android:paddingEnd">11dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/pill_primary</item>
+        <item name="android:textColor">@color/brand_primary_deep</item>
+    </style>
+
+    <!-- Selection is signalled by fill, border weight and a tick — never colour
+         alone (WCAG 1.4.1). -->
+    <style name="Lumina.Chip" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/chip_height</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/chip_selector</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Full-width selectable row used on the onboarding and mood screens. -->
+    <style name="Lumina.Option" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/option_selector</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:drawablePadding">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- Segmented control: Week / Month / 3 Months. -->
+    <style name="Lumina.Segment" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/segment_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Lumina.Meter" parent="android:Widget.Material.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/meter_primary</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+
+    <style name="Lumina.Input" parent="android:Widget.Material.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/input_selector</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+    </style>
+
+    <style name="Lumina.Switch" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:switchPadding">12dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Lumina.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/border_subtle</item>
+    </style>
+
+    <!-- The persistent five-tab bar item: 52dp tall, pill indicator behind the icon. -->
+    <style name="Lumina.NavItem" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:background">@drawable/btn_ghost</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Lumina.NavLabel" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_tertiary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Lumina.NavLabel.Active">
+        <item name="android:textColor">@color/brand_primary_deep</item>
+    </style>
+
+    <!-- ===================================================================
+         Legacy aliases. The first XML pass used these names; keeping them
+         means any layout or code still pointing at them stays valid.
+         =================================================================== -->
+    <style name="XmlTitleText" parent="Lumina.Text.H1" />
+    <style name="XmlSectionTitle" parent="Lumina.Text.TitleLarge" />
+    <style name="XmlBodyText" parent="Lumina.Text.Body" />
+    <style name="XmlPrimaryButton" parent="Lumina.Button.Primary" />
+    <style name="XmlSecondaryButton" parent="Lumina.Button.Secondary" />
+    <style name="XmlChipButton" parent="Lumina.Button.Compact" />
+    <style name="XmlNavButton" parent="Lumina.NavLabel" />
+</resources>

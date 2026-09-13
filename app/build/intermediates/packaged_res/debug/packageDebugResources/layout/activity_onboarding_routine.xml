@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding 3 of 3 — the daily anchors the smart engine plans around. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_chip_solid_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/icon_chip_solid_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/icon_chip_solid_primary" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Step 3 of 3" />
+
+            <TextView
+                style="@style/Lumina.Text.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Set your daily routine" />
+
+            <TextView
+                style="@style/Lumina.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Rough times are fine. You can change all of this later in Profile." />
+
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_sun"
+                        android:background="@drawable/pill_peach"
+                        android:tint="@color/brand_peach_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Wake up" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputWake"
+                    style="@style/Lumina.Input"
+                    android:layout_marginTop="8dp"
+                    android:hint="06:30"
+                    android:inputType="time"
+                    android:importantForAutofill="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_meal"
+                        android:background="@drawable/pill_mint"
+                        android:tint="@color/brand_mint_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Lunch" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputLunch"
+                    style="@style/Lumina.Input"
+                    android:layout_marginTop="8dp"
+                    android:hint="12:30"
+                    android:inputType="time"
+                    android:importantForAutofill="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_dumbbell"
+                        android:background="@drawable/pill_primary"
+                        android:tint="@color/brand_primary_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Exercise" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputExercise"
+                    style="@style/Lumina.Input"
+                    android:layout_marginTop="8dp"
+                    android:hint="17:30"
+                    android:inputType="time"
+                    android:importantForAutofill="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip.Small"
+                        android:src="@drawable/ic_moon"
+                        android:background="@drawable/pill_lavender"
+                        android:tint="@color/brand_lavender_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Sleep" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputSleep"
+                    style="@style/Lumina.Input"
+                    android:layout_marginTop="8dp"
+                    android:hint="23:00"
+                    android:inputType="time"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="14dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <Switch
+                    android:id="@+id/switchSmartSuggestions"
+                    style="@style/Lumina.Switch"
+                    android:checked="true"
+                    android:text="Enable smart suggestions" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRoutineFinish"
+                style="@style/Lumina.Button.Primary"
+                android:layout_marginTop="24dp"
+                android:text="Finish Setup" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

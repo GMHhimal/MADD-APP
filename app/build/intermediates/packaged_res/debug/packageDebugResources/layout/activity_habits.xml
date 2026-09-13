@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wellness & Habits — port of feature/habits/HabitsScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/screen_gutter"
+                android:paddingEnd="@dimen/screen_gutter"
+                android:paddingTop="@dimen/screen_top_padding"
+                android:paddingBottom="100dp">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.H1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daily Habits" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Keep small promises to yourself" />
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_sprout"
+                        android:background="@drawable/icon_chip_white"
+                        android:tint="@color/brand_mint_deep"
+                        android:elevation="4dp"
+                        android:contentDescription="Wellness" />
+                </LinearLayout>
+
+                <!-- Progress ring card -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_surface_lg"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:background="@drawable/dial_focus">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/Lumina.Text.H2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/brand_primary_deep"
+                                android:text="65%" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Overline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Done" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleLarge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today is going well" />
+
+                        <TextView
+                            android:id="@+id/txtHabitsSummary"
+                            style="@style/Lumina.Text.Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Loading habit progress…" />
+
+                        <ProgressBar
+                            style="@style/Lumina.Meter"
+                            android:layout_marginTop="12dp"
+                            android:progressDrawable="@drawable/meter_mint"
+                            android:progress="65" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Your habits" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_tertiary"
+                        android:text="Tap to complete" />
+                </LinearLayout>
+
+                <!-- Habit row — in progress -->
+                <LinearLayout
+                    android:id="@+id/btnHabitWater"
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_habit"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_water"
+                        android:background="@drawable/icon_chip_primary"
+                        android:tint="@color/brand_primary"
+                        android:importantForAccessibility="no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.CardTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Drink water" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="6 of 8 glasses" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="12dp"
+                        android:padding="11dp"
+                        android:background="@drawable/icon_chip_solid_primary"
+                        android:src="@drawable/ic_plus"
+                        android:tint="@color/text_on_brand"
+                        android:contentDescription="Mark complete" />
+                </LinearLayout>
+
+                <!-- Habit row — completed state -->
+                <LinearLayout
+                    android:id="@+id/btnHabitStudy"
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_habit_done"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_book"
+                        android:background="@drawable/icon_chip_white"
+                        android:tint="@color/brand_primary"
+                        android:importantForAccessibility="no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.CardTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Study 30 minutes" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Completed at 14:20" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="12dp"
+                        android:padding="11dp"
+                        android:background="@drawable/icon_chip_solid_success"
+                        android:src="@drawable/ic_check"
+                        android:tint="@color/text_on_brand"
+                        android:contentDescription="Completed" />
+                </LinearLayout>
+
+                <!-- Streak strip -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_flame"
+                        android:background="@drawable/icon_chip_peach"
+                        android:tint="@color/brand_peach_deep"
+                        android:importantForAccessibility="no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.CardTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12 day streak" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Your longest run so far" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Health reminders entry -->
+                <LinearLayout
+                    android:id="@+id/btnHealth"
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_heart_pulse"
+                        android:background="@drawable/icon_chip_danger"
+                        android:tint="@color/status_danger"
+                        android:importantForAccessibility="no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.CardTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Health reminders" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Dental checkup due next month" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:tint="@color/text_tertiary"
+                        android:importantForAccessibility="no" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnNewHabit"
+            style="@style/Lumina.Button.Fab"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/screen_gutter"
+            android:layout_marginBottom="@dimen/screen_gutter"
+            android:drawableStart="@drawable/ic_plus"
+            android:drawableTint="@color/text_on_brand"
+            android:text="New Habit" />
+    </FrameLayout>
+
+    <include layout="@layout/include_bottom_nav_wellness" />
+</LinearLayout>

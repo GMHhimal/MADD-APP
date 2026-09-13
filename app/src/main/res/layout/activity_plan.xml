@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plan — port of feature/plan/PlanScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_canvas">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/screen_gutter"
+                android:paddingEnd="@dimen/screen_gutter"
+                android:paddingTop="@dimen/screen_top_padding"
+                android:paddingBottom="100dp">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.H1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Plan" />
+
+                        <TextView
+                            android:id="@+id/txtPlanSummary"
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Loading deadlines…" />
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_calendar"
+                        android:background="@drawable/icon_chip_white"
+                        android:tint="@color/text_primary"
+                        android:elevation="4dp"
+                        android:contentDescription="Calendar" />
+                </LinearLayout>
+
+                <!-- Week strip -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="18dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Mon" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="8" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Tue" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="9" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_active">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/brand_primary_surface"
+                            android:text="Wed" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_on_brand"
+                            android:text="10" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/text_on_brand" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Thu" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="11" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Fri" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="12" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Sat" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="13" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/day_inactive">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_tertiary"
+                            android:text="Sun" />
+
+                        <TextView
+                            style="@style/Lumina.Text.TitleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="14" />
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/timeline_dot_free" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Section header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.TitleLarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Important Deadlines" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 active" />
+                </LinearLayout>
+
+                <!-- HIGH priority deadline -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/card_deadline_high">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.TitleMedium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cloud Computing Mid Exam" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="IT4090" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Lumina.Pill"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pill_danger"
+                            android:textColor="@color/status_danger"
+                            android:drawableStart="@drawable/ic_alert"
+                            android:drawableTint="@color/status_danger"
+                            android:text="HIGH" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="14dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_clock"
+                            android:tint="@color/status_danger"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:textColor="@color/status_danger"
+                            android:text="Due tomorrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="14dp">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Progress" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:text="60%" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="@style/Lumina.Meter"
+                        android:layout_marginTop="7dp"
+                        android:progressDrawable="@drawable/meter_danger"
+                        android:progress="60" />
+
+                    <Button
+                        android:id="@+id/btnPlanFocus"
+                        style="@style/Lumina.Button.Primary"
+                        android:layout_height="@dimen/button_height_compact"
+                        android:layout_marginTop="14dp"
+                        android:text="Continue task" />
+                </LinearLayout>
+
+                <!-- MEDIUM priority deadline -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/card_deadline_medium">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.TitleMedium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Research proposal" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Research methods" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Lumina.Pill"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pill_warning"
+                            android:textColor="@color/status_warning"
+                            android:drawableStart="@drawable/ic_alert"
+                            android:drawableTint="@color/status_warning"
+                            android:text="MEDIUM" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="14dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_clock"
+                            android:tint="@color/status_warning"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:textColor="@color/status_warning"
+                            android:text="Due in 4 days" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="14dp">
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Progress" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:text="25%" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="@style/Lumina.Meter"
+                        android:layout_marginTop="7dp"
+                        android:progressDrawable="@drawable/meter_warning"
+                        android:progress="25" />
+                </LinearLayout>
+
+                <!-- Smart time allocation -->
+                <TextView
+                    style="@style/Lumina.Text.TitleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Smart Time Allocation" />
+
+                <LinearLayout
+                    style="@style/Lumina.Card.Insight"
+                    android:layout_marginTop="14dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_sparkle"
+                            android:tint="@color/brand_lavender_deep"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:textColor="@color/brand_primary_deep"
+                            android:text="Lumina found 2 focus periods today." />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/card_translucent"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp">
+
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_clock"
+                            android:tint="@color/brand_primary_deep"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.LabelLarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3:30 PM – 4:15 PM" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="45m available" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:padding="8dp"
+                            android:background="@drawable/icon_chip_small_primary"
+                            android:src="@drawable/ic_plus"
+                            android:tint="@color/brand_primary_deep"
+                            android:contentDescription="Add to my day" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/card_translucent"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp">
+
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_clock"
+                            android:tint="@color/brand_primary_deep"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.LabelLarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="8:00 PM – 9:00 PM" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1h available" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:padding="8dp"
+                            android:background="@drawable/icon_chip_small_primary"
+                            android:src="@drawable/ic_plus"
+                            android:tint="@color/brand_primary_deep"
+                            android:contentDescription="Add to my day" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Extended FAB with the brand-tinted shadow from the design. -->
+        <Button
+            android:id="@+id/btnAddDeadline"
+            style="@style/Lumina.Button.Fab"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/screen_gutter"
+            android:layout_marginBottom="@dimen/screen_gutter"
+            android:drawableStart="@drawable/ic_plus"
+            android:drawableTint="@color/text_on_brand"
+            android:text="Add Task" />
+    </FrameLayout>
+
+    <include layout="@layout/include_bottom_nav_plan" />
+</LinearLayout>

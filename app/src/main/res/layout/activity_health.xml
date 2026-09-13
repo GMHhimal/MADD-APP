@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Health reminders — port of feature/health/HealthScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/screen_gutter"
+                android:paddingEnd="@dimen/screen_gutter"
+                android:paddingTop="@dimen/screen_top_padding"
+                android:paddingBottom="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_chevron_left"
+                        android:background="@drawable/btn_circle"
+                        android:tint="@color/text_primary"
+                        android:elevation="4dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Back" />
+
+                    <TextView
+                        style="@style/Lumina.Text.H2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:text="Health Reminders" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Lumina.Text.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Keep routine checks from slipping through the cracks." />
+
+                <!-- Dental -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="18dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:baselineAligned="false">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip"
+                            android:src="@drawable/ic_tooth"
+                            android:background="@drawable/icon_chip_primary"
+                            android:tint="@color/brand_primary_deep"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="14dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.CardTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dental checkup" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Every 6 months" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Lumina.Pill"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pill_warning"
+                            android:textColor="@color/status_warning"
+                            android:text="in 28 days" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/Lumina.Divider"
+                        android:layout_marginTop="14dp" />
+
+                    <Switch
+                        style="@style/Lumina.Switch"
+                        android:layout_height="52dp"
+                        android:checked="true"
+                        android:text="Notify me" />
+
+                    <Button
+                        android:id="@+id/btnHealthDone"
+                        style="@style/Lumina.Button.Soft"
+                        android:layout_height="@dimen/button_height_compact"
+                        android:text="Mark as done" />
+                </LinearLayout>
+
+                <!-- Eye -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:baselineAligned="false">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip"
+                            android:src="@drawable/ic_eye"
+                            android:background="@drawable/icon_chip_lavender"
+                            android:tint="@color/brand_lavender_deep"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="14dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.CardTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Eye checkup" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Yearly" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Lumina.Pill"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pill_mint"
+                            android:textColor="@color/brand_mint_deep"
+                            android:text="in 3 months" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Blood test -->
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:baselineAligned="false">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip"
+                            android:src="@drawable/ic_blood"
+                            android:background="@drawable/icon_chip_danger"
+                            android:tint="@color/status_danger"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="14dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Lumina.Text.CardTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Blood sugar test" />
+
+                            <TextView
+                                style="@style/Lumina.Text.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Every 12 months" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Lumina.Pill"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pill_sunken"
+                            android:textColor="@color/text_secondary"
+                            android:text="in 7 months" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Non-diagnostic disclaimer -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/card_sunken"
+                    android:padding="14dp"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_info"
+                        android:tint="@color/text_tertiary"
+                        android:importantForAccessibility="no" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="11dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.LabelMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:text="Reminders only" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Lumina does not diagnose anything. Intervals are general guidance, so follow whatever your doctor advises." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAddReminder"
+            style="@style/Lumina.Button.Fab"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/screen_gutter"
+            android:layout_marginBottom="@dimen/screen_gutter"
+            android:drawableStart="@drawable/ic_plus"
+            android:drawableTint="@color/text_on_brand"
+            android:text="Add Reminder" />
+    </FrameLayout>
+</LinearLayout>

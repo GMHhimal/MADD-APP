@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding 1 of 3 — port of feature/onboarding/OnboardingScreens.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <!-- Step indicator -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_chip_solid_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/pill_sunken" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/pill_sunken" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Step 1 of 3" />
+
+            <TextView
+                style="@style/Lumina.Text.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tell us about your lifestyle" />
+
+            <TextView
+                style="@style/Lumina.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="This stays on your device. It only helps Lumina shape the day around you." />
+
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="I am a…" />
+
+            <RadioGroup
+                android:id="@+id/groupRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="14dp">
+
+                <RadioButton
+                    android:id="@+id/radioStudent"
+                    style="@style/Lumina.Option"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_cap"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Student" />
+
+                <RadioButton
+                    android:id="@+id/radioProfessional"
+                    style="@style/Lumina.Option"
+                    android:drawableStart="@drawable/ic_code"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Working professional" />
+
+                <RadioButton
+                    android:id="@+id/radioOther"
+                    style="@style/Lumina.Option"
+                    android:drawableStart="@drawable/ic_sparkle"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Something else" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="My main goals" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_plan"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Stay organized" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_sprout"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Build habits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_wave"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Reduce stress" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_moon"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Sleep better" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLifestyleContinue"
+                style="@style/Lumina.Button.Primary"
+                android:layout_marginTop="28dp"
+                android:text="Continue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

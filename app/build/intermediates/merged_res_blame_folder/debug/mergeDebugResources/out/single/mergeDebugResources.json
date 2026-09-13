@@ -1,0 +1,1074 @@
+[
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_white_soft.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_white_soft.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_blob_mint.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/blob_mint.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_button_secondary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_button_secondary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_white.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_white.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_avatar_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/avatar_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_health.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_health.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_dialog_add_deadline.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/dialog_add_deadline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_button.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_button.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_divider_hairline.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/divider_hairline.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_repeat.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_repeat.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_timeline_dot_free.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/timeline_dot_free.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_peach.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_peach.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_softblue.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_softblue.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_battery.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_battery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_surface_sunken_round.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_surface_sunken_round.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_dialog_surface.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/dialog_surface.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_surface.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_surface.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_wellness.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_wellness.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_onboarding_lifestyle.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_onboarding_lifestyle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_chip_selected.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/chip_selected.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_danger.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_danger.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_circle_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_circle_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_empty_halo_outer.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/empty_halo_outer.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_habit_done.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_habit_done.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_home_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_home_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_onboarding_interests.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_onboarding_interests.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_progress_track_night.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_progress_track_night.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_brand_mark_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/brand_mark_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_game.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_game.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_circle_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_circle_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_ring_medium.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_ring_medium.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_fab.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_fab.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_mood_good.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_mood_good.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_peach.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_peach.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_xml_dashboard.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_xml_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_chip.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_logout.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_pill_active.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_pill_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_welcome_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_welcome_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_lavender.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_lavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_welcome_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_welcome_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_smile.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_smile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_ring_large.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_ring_large.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_mint.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_mint.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_mood_low.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_mood_low.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_day_inactive.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/day_inactive.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_pulse.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_pulse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_chip_selected.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_dumbbell.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_dumbbell.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_profile.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_note.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_avatar.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_avatar.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_pen.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_pen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_dialog_add_deadline.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\dialog_add_deadline.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_sunken.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_sunken.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav_home.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_mint.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_mint.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_dialog_add_habit.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\dialog_add_habit.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_blob_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/blob_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_logo.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_logo.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_info.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_peach_outline.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_peach_outline.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_day_selector.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/day_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_button_secondary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_fab_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_fab_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_progress_white.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_progress_white.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_dialog_time_picker_demo.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/dialog_time_picker_demo.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_walk.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_walk.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_soft_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_soft_shape.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_sunken.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_sunken.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_plan.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_plan.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_neutral_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_neutral_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_circle.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_circle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_blob_lavender.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/blob_lavender.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_xml_dashboard.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_xml_dashboard.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_secondary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_secondary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_leaf.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_leaf.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_deadline_medium.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_deadline_medium.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_book.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_book.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_option_selected.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/option_selected.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bottom_bar_surface.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bottom_bar_surface.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_dialog_time_picker_demo.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\dialog_time_picker_demo.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_bell.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_bell.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_cap.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_cap.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_onboarding_routine.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_onboarding_routine.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_outline34.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_outline34.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_stretch.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_stretch.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_stat_icon_lavender.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_stat_icon_lavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_tooth.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_tooth.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_screen_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_screen_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_ring_small.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_ring_small.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_close.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ring_outline_mid.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ring_outline_mid.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_blood.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_blood.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_input_focused.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_input_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_ic_notification.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\ic_notification.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_mood_great.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_mood_great.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_warning.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_breathing.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_breathing.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_insight.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_insight.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_deadline_low.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_deadline_low.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_input_selector.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/input_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_pill.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_pill.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_mood_okay.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_mood_okay.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_solid_success.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_solid_success.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_option_selector.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/option_selector.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_badge_now.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/badge_now.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_button_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_solid_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_solid_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_eye.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_eye.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_bulb.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_bulb.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_users.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_users.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_option_unselected.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/option_unselected.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav_wellness.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav_wellness.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_progress.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_progress.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_profile.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_card.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_plan.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_plan.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_lavender.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_lavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_welcome.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_tv.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_tv.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_success.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_success.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_dialog_add_health_reminder.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\dialog_add_health_reminder.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_timeline_dot_default.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/timeline_dot_default.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_timeline_free.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_timeline_free.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_code.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_code.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_chevron_left.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_chevron_left.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_gear.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_gear.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_night_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_night_shape.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_deadline_high.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_deadline_high.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_play.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_small_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_small_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_breathing.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_breathing.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav_plan.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav_plan.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_input.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_mood_stressed.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_mood_stressed.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_compact_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_compact_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_top_circle.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_top_circle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ring_outline_strong.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ring_outline_strong.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_dial_breathing.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/dial_breathing.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_segment_selector.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/segment_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_outline16.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_outline16.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_plan.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_plan.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_sparkle.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_sparkle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_night.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_night.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_sunken.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_sunken.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_stat_icon_peach.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_stat_icon_peach.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_dialog_add_habit.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/dialog_add_habit.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_surface_lg.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_surface_lg.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_target.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_target.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_voice_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_voice_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_wave.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_wave.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_progress.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_progress.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_home.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_focus_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_focus_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_onboarding_routine.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_onboarding_routine.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_neutral.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_neutral.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_outline24.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_outline24.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_ghost.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_ghost.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_white.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_white.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_balance.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_balance.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_freetime.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_freetime.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_peach.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_peach.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_chip_unselected.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/chip_unselected.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_softlavender.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_softlavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_day_active.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/day_active.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_check.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ring_outline_soft.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ring_outline_soft.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_avatar_blue.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_avatar_blue.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_timeline_now.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_timeline_now.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_warning.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_health.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_health.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav_progress.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav_progress.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_check_circle.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_mint.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_mint.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_stat_icon_mint.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_stat_icon_mint.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_primary_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_primary_shape.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_onboarding_lifestyle.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_onboarding_lifestyle.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_sun.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_sun.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_heart.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_heart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_include_bottom_nav_profile.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/include_bottom_nav_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_outline_primary.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_outline_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_success.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_success.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_danger.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_danger.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_plus.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_plus.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_music.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_music.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_lavender.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_lavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_flame.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_flame.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_habits.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_habits.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_chip_selector.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/chip_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_freetime_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_freetime_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_button_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_meter_lavender.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/meter_lavender.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_circle.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_chip_peach.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_chip_peach.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_progress_primary.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_progress_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_timeline.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_timeline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_mood.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_mood.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_circle_gradient.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_circle_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_danger.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_danger.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_freetime.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_freetime.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_chip.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_dial_focus.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/dial_focus.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_empty_halo_inner.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/empty_halo_inner.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_success.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_success.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_translucent.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_translucent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_progress.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_progress.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_moon.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_dialog_add_health_reminder.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/dialog_add_health_reminder.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_calendar.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_water.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_water.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_focus.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_focus.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_clock.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_night_chip.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_night_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_outline.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_outline.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_coffee.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_coffee.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_bg_night_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/bg_night_gradient.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_soft.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_soft.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_white_button.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_white_button.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_primary.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_primary.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_nav_pill_active.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/nav_pill_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_sprout.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_sprout.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_compact_neutral_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_compact_neutral_shape.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_brand_tile_gradient.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/brand_tile_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_focus.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_focus.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_icon_chip_warning.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/icon_chip_warning.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_habits.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_habits.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_danger_soft.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_danger_soft.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_blob_peach.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/blob_peach.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_timeline_rail.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/timeline_rail.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_arrow_right.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_primary_outline.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_primary_outline.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_shield.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_heart_pulse.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_heart_pulse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_circle_primary.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_circle_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_success.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_success.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/layout_activity_mood.xml.flat",
+        "source": "com.lumina.app-main-57:/layout/activity_mood.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_stat_icon_blue.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_stat_icon_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_activity_onboarding_interests.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\activity_onboarding_interests.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_timeline_dot_now.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/timeline_dot_now.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_alert.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_alert.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_pill_mint.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_pill_mint.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_card_habit.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/card_habit.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_pill_mint.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/pill_mint.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_compact.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_compact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\layout_include_bottom_nav.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\layout\\include_bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-debug-55:\\drawable_bg_card_blue.xml.flat",
+        "source": "C:\\Users\\Himal\\.gradle\\daemon\\8.14\\com.lumina.app-main-57:\\drawable\\bg_card_blue.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_meal.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_meal.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_secondary_shape.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_secondary_shape.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_home.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_btn_compact_neutral.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/btn_compact_neutral.xml"
+    },
+    {
+        "merged": "com.lumina.app-debug-55:/drawable_ic_pause.xml.flat",
+        "source": "com.lumina.app-main-57:/drawable/ic_pause.xml"
+    }
+]

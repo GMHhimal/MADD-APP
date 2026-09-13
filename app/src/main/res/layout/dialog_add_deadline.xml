@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_surface"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            style="@style/Lumina.IconChip"
+            android:src="@drawable/ic_calendar"
+            android:background="@drawable/icon_chip_primary"
+            android:tint="@color/brand_primary_deep"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New deadline" />
+
+            <TextView
+                style="@style/Lumina.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Lumina will find the time for it." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Title" />
+
+    <EditText
+        android:id="@+id/etDeadlineTitle"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="Cloud Computing assignment"
+        android:inputType="textCapSentences"
+        android:importantForAutofill="no" />
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Course" />
+
+    <EditText
+        android:id="@+id/etDeadlineCourse"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="IT4090"
+        android:inputType="textCapCharacters"
+        android:importantForAutofill="no" />
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Priority" />
+
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnDeadlineCancel"
+            style="@style/Lumina.Button.Neutral"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Cancel" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnDeadlineSave"
+            style="@style/Lumina.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

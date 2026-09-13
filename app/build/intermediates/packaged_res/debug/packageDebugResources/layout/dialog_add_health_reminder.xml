@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_surface"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            style="@style/Lumina.IconChip"
+            android:src="@drawable/ic_heart_pulse"
+            android:background="@drawable/icon_chip_danger"
+            android:tint="@color/status_danger"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New reminder" />
+
+            <TextView
+                style="@style/Lumina.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="A nudge, not medical advice." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Check" />
+
+    <EditText
+        android:id="@+id/etHealthTitle"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="Dental checkup"
+        android:inputType="textCapSentences"
+        android:importantForAutofill="no" />
+
+    <TextView
+        style="@style/Lumina.Text.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Repeat every (months)" />
+
+    <EditText
+        android:id="@+id/etHealthMonths"
+        style="@style/Lumina.Input"
+        android:layout_marginTop="8dp"
+        android:hint="6"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_sunken"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Switch
+            android:id="@+id/switchHealthNotify"
+            style="@style/Lumina.Switch"
+            android:layout_height="52dp"
+            android:checked="true"
+            android:text="Notify me when due" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnHealthCancel"
+            style="@style/Lumina.Button.Neutral"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Cancel" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnHealthSave"
+            style="@style/Lumina.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height_compact"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

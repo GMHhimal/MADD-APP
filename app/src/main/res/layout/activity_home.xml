@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home — port of feature/home/HomeScreen.kt. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <!-- ================= Header ================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            style="@style/Lumina.Text.H1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good evening" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="7dp"
+                            android:src="@drawable/ic_sun"
+                            android:tint="@color/brand_peach_deep"
+                            android:importantForAccessibility="no" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Your day at a glance" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/avatar_gradient"
+                    android:gravity="center"
+                    android:text="L"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_on_brand" />
+            </LinearLayout>
+
+            <!-- ================= Balance pill ================= -->
+            <TextView
+                style="@style/Lumina.Pill"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pill_mint"
+                android:textColor="@color/brand_mint_deep"
+                android:drawableStart="@drawable/ic_check_circle"
+                android:drawableTint="@color/brand_mint_deep"
+                android:text="Balanced day" />
+
+            <!-- ================= Summary card ================= -->
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/card_surface_lg"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.Overline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today" />
+
+                    <TextView
+                        android:id="@+id/txtHomeSummary"
+                        style="@style/Lumina.Text.Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Loading today\'s summary…" />
+                </LinearLayout>
+
+                <View style="@style/Lumina.Divider" />
+
+                <!-- Stat grid: mood / habits -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip.Small"
+                            android:src="@drawable/ic_smile"
+                            android:background="@drawable/pill_peach"
+                            android:tint="@color/brand_peach_deep"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Overline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Mood" />
+
+                        <TextView
+                            style="@style/Lumina.Text.StatValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Good" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="118dp"
+                        android:background="@color/border_subtle" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip.Small"
+                            android:src="@drawable/ic_check_circle"
+                            android:background="@drawable/pill_mint"
+                            android:tint="@color/status_success"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Overline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Habits" />
+
+                        <TextView
+                            style="@style/Lumina.Text.StatValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="4 / 6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/Lumina.Divider" />
+
+                <!-- Stat grid: focus / free time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip.Small"
+                            android:src="@drawable/ic_target"
+                            android:background="@drawable/pill_primary"
+                            android:tint="@color/brand_primary_deep"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Overline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Focus time" />
+
+                        <TextView
+                            style="@style/Lumina.Text.StatValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="50m" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="118dp"
+                        android:background="@color/border_subtle" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Lumina.IconChip.Small"
+                            android:src="@drawable/ic_clock"
+                            android:background="@drawable/pill_lavender"
+                            android:tint="@color/brand_lavender_deep"
+                            android:importantForAccessibility="no" />
+
+                        <TextView
+                            style="@style/Lumina.Text.Overline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Free time" />
+
+                        <TextView
+                            style="@style/Lumina.Text.StatValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="45m" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ================= Quick actions ================= -->
+            <TextView
+                style="@style/Lumina.Text.TitleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Quick actions" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/btnLogMood"
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="14dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_smile"
+                        android:background="@drawable/icon_chip_peach"
+                        android:tint="@color/brand_peach_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Log mood" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Quick check-in" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/btnFindFreeTime"
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="14dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_clock"
+                        android:background="@drawable/icon_chip_lavender"
+                        android:tint="@color/brand_lavender_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Free time" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="45 min open" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/btnStartFocus"
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="14dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_target"
+                        android:background="@drawable/icon_chip_primary"
+                        android:tint="@color/brand_primary_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Focus" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="25 min session" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/btnBreathing"
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="14dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        style="@style/Lumina.IconChip"
+                        android:src="@drawable/ic_wave"
+                        android:background="@drawable/icon_chip_mint"
+                        android:tint="@color/brand_mint_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Breathe" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="5 min calm" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ================= Lumina's suggestion ================= -->
+            <LinearLayout
+                style="@style/Lumina.Card.Insight"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_sparkle"
+                        android:tint="@color/brand_lavender_deep"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        style="@style/Lumina.Text.LabelLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/brand_primary_deep"
+                        android:text="A good moment to start" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Lumina.Text.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Your Cloud Computing deadline is close. Use 25 minutes of your free slot for a focused study session." />
+
+                <Button
+                    android:id="@+id/btnPlanFocus"
+                    style="@style/Lumina.Button.Primary"
+                    android:layout_height="@dimen/button_height_compact"
+                    android:layout_marginTop="14dp"
+                    android:text="Use this plan" />
+            </LinearLayout>
+
+            <!-- ================= Timeline ================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    style="@style/Lumina.Text.TitleLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Today\'s Timeline" />
+
+                <TextView
+                    style="@style/Lumina.Text.LabelMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brand_primary_deep"
+                    android:drawableEnd="@drawable/ic_chevron_right"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:drawablePadding="2dp"
+                    android:text="See all" />
+            </LinearLayout>
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="end"
+                    android:text="09:00" />
+
+                <FrameLayout
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="26dp"
+                        android:background="@color/border_subtle" />
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/timeline_dot_default" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/card_timeline"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Database lecture" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Lecture hall B • 90 min" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 2 — happening now -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="end"
+                    android:text="11:00" />
+
+                <FrameLayout
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="26dp"
+                        android:background="@color/border_subtle" />
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/timeline_dot_now" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/card_timeline_now"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/badge_now"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.06"
+                        android:textColor="@color/brand_primary_deep"
+                        android:text="HAPPENING NOW" />
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Assignment work" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Cloud Computing • 120 min" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="end"
+                    android:text="13:00" />
+
+                <FrameLayout
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="26dp"
+                        android:background="@color/border_subtle" />
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/timeline_dot_default" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/card_timeline"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Step away from the screen • 45 min" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 4 — free slot -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="end"
+                    android:text="15:30" />
+
+                <FrameLayout
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="26dp"
+                        android:background="@color/border_subtle" />
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/timeline_dot_free" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/card_timeline_free"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/brand_peach_deep"
+                        android:text="Free slot" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="45 minutes • yours to spend" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:baselineAligned="false">
+
+                <TextView
+                    style="@style/Lumina.Text.Caption"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="end"
+                    android:text="17:30" />
+
+                <FrameLayout
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/timeline_dot_default" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Lumina.Card"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/card_timeline"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        style="@style/Lumina.Text.CardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gym" />
+
+                    <TextView
+                        style="@style/Lumina.Text.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Strength day • 60 min" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav_home" />
+</LinearLayout>

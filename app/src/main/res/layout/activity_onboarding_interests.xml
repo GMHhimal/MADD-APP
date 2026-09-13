@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding 2 of 3 — interests drive the free-time suggestions. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/screen_gutter"
+            android:paddingEnd="@dimen/screen_gutter"
+            android:paddingTop="@dimen/screen_top_padding"
+            android:paddingBottom="@dimen/screen_bottom_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_chip_solid_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/icon_chip_solid_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/pill_sunken" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Lumina.Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Step 2 of 3" />
+
+            <TextView
+                style="@style/Lumina.Text.H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="What do you enjoy?" />
+
+            <TextView
+                style="@style/Lumina.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pick a few. Lumina uses these when it suggests something for a free slot." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_music"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Music" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_game"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Gaming" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_walk"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Walking" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_book"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Reading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:drawableStart="@drawable/ic_dumbbell"
+                    android:drawableTint="@color/brand_primary_deep"
+                    android:text="Fitness" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <CheckBox
+                    style="@style/Lumina.Chip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_play"
+                    android:drawableTint="@color/text_secondary"
+                    android:text="Watching" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Lumina.Card"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    style="@style/Lumina.Text.TitleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred free-time length" />
+
+                <TextView
+                    style="@style/Lumina.Text.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Lumina will not suggest anything shorter than this." />
+
+                <SeekBar
+                    android:id="@+id/seekFreeTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:max="90"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/meter_primary" />
+
+                <TextView
+                    style="@style/Lumina.Text.LabelLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/brand_primary_deep"
+                    android:text="30 minutes" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnInterestsContinue"
+                style="@style/Lumina.Button.Primary"
+                android:layout_marginTop="24dp"
+                android:text="Continue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

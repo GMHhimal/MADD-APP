@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing tokens — ui/theme/Dimens.kt -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_xxl">24dp</dimen>
+    <dimen name="space_xxxl">32dp</dimen>
+
+    <!-- Every screen keeps a constant 24dp gutter, matching the prototype. -->
+    <dimen name="screen_gutter">24dp</dimen>
+    <!-- Clears the status bar plus the 12dp design top padding. -->
+    <dimen name="screen_top_padding">20dp</dimen>
+    <!-- Keeps the last card clear of the bottom bar. -->
+    <dimen name="screen_bottom_padding">28dp</dimen>
+
+    <!-- WCAG 2.1 AA minimum interactive size. -->
+    <dimen name="min_touch_target">44dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_height_compact">48dp</dimen>
+    <dimen name="chip_height">46dp</dimen>
+    <dimen name="bottom_bar_height">64dp</dimen>
+
+    <!-- Radius tokens — ui/theme/Shape.kt -->
+    <dimen name="radius_sm">12dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+    <dimen name="radius_lg">20dp</dimen>
+    <dimen name="radius_card">22dp</dimen>
+    <dimen name="radius_xl">28dp</dimen>
+
+    <dimen name="card_padding">18dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+</resources>

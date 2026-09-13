@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lumina</string>
+    <string name="notif_channel_habit">Habit reminders</string>
+    <string name="notif_channel_gym">Gym reminders</string>
+    <string name="notif_channel_meal">Meal reminders</string>
+    <string name="notif_channel_deadline">Deadline alerts</string>
+    <string name="notif_channel_freetime">Free-time suggestions</string>
+    <string name="notif_channel_wellness">Wellness check-ins</string>
+    <string name="notif_channel_health">Health reminders</string>
+</resources>
